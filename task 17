@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long a;
+    cin >> a;
+    long long arrA[a];
+    for (int i = 0;i < a;i++) {
+        cin >> arrA[i];
+    }
+    for (int i = 0;i < a;i++) {
+        int r = i + 1;
+        for (;r < a;r++) {
+            cout << arrA[i] << " " << arrA[r] << endl;
+        }
+    }
+    return 0;
+}
